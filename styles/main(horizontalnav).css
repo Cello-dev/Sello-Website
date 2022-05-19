@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+html{
+    background-color: lightsteelblue;
+    background-image: url("../images/bgtile.jpg");
+
+}
+
+body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100%;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+        border: 3px solid steelblue;
+        box-shadow: 1px 10px 8px 10px #888888;
+        background-color: white;
+}
+
+h1, h2, h3, p, blockquote {
+    margin-bottom: 12px;
+}
+
+header h2 {
+    font-size: 300%;
+    font-style: italic;
+    color: steelblue;
+    text-shadow: 5px 5px 12px;
+}
+
+#logoimage{
+    float: left;
+    margin-right: 15px;
+
+}
+
+/* Horizontal inline navigation menu */
+#nav_menu{
+    margin: 0;
+}
+
+#nav_menu ul{
+    list-style: none;
+    text-align: center;
+    border-top: 1px solid steelblue;
+    border-bottom: 1px solid steelblue;
+    background-color: steelblue;
+    padding: 10px 0; /*2 values: 1st value top&bottom*/
+}
+
+#nav_menu ul li{
+    display: inline;
+    border-right: 2px solid black;
+    padding: 10px 3em;
+}
+
+#nav_menu #last{
+    border-right: none;
+}
+
+#nav_menu ul li a{
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+#nav_menu ul li a:hover{
+    color: red;
+}
+
+#nav_menu ul li:hover{
+    background-color: lightsteelblue;
+}
+
+main{
+    padding: 0 1em;
+}
+
+aside{
+    width: 35%;
+    padding-top: 1.6em;
+}
+
+#nav_list h2{
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#nav_list ul{
+    list-style: none;
+}
+
+#nav_list ul li{
+    width: 90%;
+    margin: 0 auto .5em; /*1st val top, middle val sides, 3 val bottom */
+}
+
+#nav_list ul li a{
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: lightsteelblue;
+    padding: .5em 0 .5em .5em;
+    color: black;
+}
+
+#nav_list ul li a:hover{
+    color: white;
+    background-color: steelblue;
+}
+
+section{
+    width: 65%;
+    float: right;
+}
+
+blockquote{
+    font-style: italic;
+    padding: 1em;
+    border-left: 3px solid steelblue;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
+h3 {
+    font-size: 150%
+}
+
+aside a{
+    text-decoration: none;
+}
+
+section a:link, section a:visited {
+    color: maroon;
+}
+section a:hover, section a:active{
+    color: steelblue;;
+}
+
+aside a:link, aside a:visited {
+    color: steelblue;
+}
+aside a:hover, aside a:active{
+    color: maroon;
+}
+
+footer {
+    clear: both;
+    background-color: steelblue;
+    text-align: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+aside ul{
+    margin-left: 1em;
+    padding-bottom: 1em;
+}
+
+aside li{
+    font-weight: bold;
+    line-height: 130%;
+}
+
+footer p{
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+header{
+    background-image: linear-gradient(white, lightsteelblue);
+    border-bottom: 3px solid steelblue;
+}
