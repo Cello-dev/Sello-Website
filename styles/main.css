@@ -16,6 +16,10 @@ html{
     height: 0;
 }
 
+#curr-page{
+    font-weight: bold;
+}
+
 header h1{
     font-size: 1000%;
     text-align: center;

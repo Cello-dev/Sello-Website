@@ -1,5 +1,12 @@
-section{
-    margin: 30vh 0;
+div #start{
+    font-size: 150px;
+    margin: 200px 0;
+    text-align: center;
+}
+
+#arrow{
+    width: 100px;
+    margin-bottom: 100px;
 }
 
 .fadeInTop{
@@ -52,4 +59,8 @@ section{
         opacity: 1;
         -o-transform: translateY(0px);
     }
+}
+
+footer{
+    position: sticky;
 }

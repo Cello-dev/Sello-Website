@@ -29,7 +29,7 @@
               <li class="nav-item">
                 <a class="nav-link active" href="whySello.html">Why Sello?</a>
               </li>
-              <li class="nav-item">
+              <li id = "curr-page" class = "nav-item">
                 <a class="nav-link active" href="ourApproach.html">Our Approach</a>
               </li>
               <li class="nav-item">
@@ -46,6 +46,18 @@
         </div>
        </nav>
        <main>
+        <div class = "top">
+          <h1 id = "start">
+             Our Approach
+           </h1>
+           <img id = "arrow" src = "../assets/images/arrow.gif">
+          </div> 
+          <div id = "mySidenav" class = "sidenav">
+            <a href = "javascript:void(0)" class = "closebtn" onclick = "closeNav()">&times;</a>
+            <a href = "#intro">Intro</a>
+          </div>
+          <div id = "main">
+            <span id = "tri" style = "font-size:30px;cursor:pointer" onclick = "openNav()">&#9776;</span>
         <div class = "container">
           <div class = "animated">
         <h1 id = "head1">
@@ -73,18 +85,29 @@
       </div>
       <br>
     </section>
-        
-        <h1 id = "head2">
-          Monetary Strategy
-        </h1>
-        <p class = "text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at lacus eget nisi sodales volutpat. Praesent tortor purus, pharetra non orci non, vulputate consectetur mi. Etiam vel risus in odio eleifend tempus eget non augue. Donec semper dui blandit, tempus ante vitae, faucibus sapien. Mauris at tellus vel eros malesuada dapibus sed ac leo. Aenean vitae urna at purus congue tincidunt vitae nec lorem. Nam dui magna, luctus nec dignissim at, finibus quis tortor. Nam aliquam sed libero in fermentum. Nunc pharetra elit non bibendum ultricies.
+      <h1>
+        Helping Both Businesses and Influencers
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at lacus eget nisi sodales volutpat. Praesent tortor purus, pharetra non orci non, vulputate consectetur mi. Etiam vel risus in odio eleifend tempus eget non augue. Donec semper dui blandit, tempus ante vitae, faucibus sapien. Mauris at tellus vel eros malesuada dapibus sed ac leo. Aenean vitae urna at purus congue tincidunt vitae nec lorem. Nam dui magna, luctus nec dignissim at, finibus quis tortor. Nam aliquam sed libero in fermentum. Nunc pharetra elit non bibendum ultricies.
 
-          Phasellus sed odio sed lorem lobortis gravida at in ipsum. Aenean a mauris a sapien sollicitudin maximus vel in libero. Aenean convallis facilisis maximus. Proin tempus mattis felis, id bibendum metus facilisis consectetur. Curabitur vel erat vel tellus sodales rhoncus non id leo. Vestibulum tristique leo ac nisi volutpat fermentum. Fusce eu velit ut nibh ultrices varius. Proin accumsan eu odio id volutpat. Donec ac nunc massa. Sed facilisis hendrerit massa, eu aliquet dolor pretium in. Pellentesque at nisl arcu.
-        </p>
+        Phasellus sed odio sed lorem lobortis gravida at in ipsum. Aenean a mauris a sapien sollicitudin maximus vel in libero. Aenean convallis facilisis maximus. Proin tempus mattis felis, id bibendum metus facilisis consectetur. Curabitur vel erat vel tellus sodales rhoncus non id leo. Vestibulum tristique leo ac nisi volutpat fermentum. Fusce eu velit ut nibh ultrices varius. Proin accumsan eu odio id volutpat. Donec ac nunc massa. Sed facilisis hendrerit massa, eu aliquet dolor pretium in. Pellentesque at nisl arcu.
+
+      </p>
       </div>
     </div>
     <script src = "../javascript/fade.js"></script>
+    <script>
+      function openNav(){
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+      function closeNav(){
+        document.getElementById("mySidenav").style.width = "0px";
+        document.getElementById("main").style.marginLeft = "0px";
+      }
+    </script>
+          </div>
        </main>
        <footer>
         <p>&copy; <span id = "copyright"></span> Sello</p>
