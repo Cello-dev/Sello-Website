@@ -10,7 +10,14 @@ div #start{
 }
 
 .animated{
-    display: none;
+    visibility: hidden;
+}
+
+#tri{
+    float: left;
+    margin-left: 1.2%;
+    position: sticky;
+    top: 200px;
 }
 
 .fadeInTop{
@@ -18,13 +25,13 @@ div #start{
     -webkit-animation: fadeInTop 1.5s both;
     -moz-animation: fadeInTop 1.5s both;
     -o-animation: fadeInTop 1.5s both;
-    display: block;
+    visibility: visible;
 }
 
 @keyframes fadeInTop{
     0%{
         opacity: 0;
-        transform: translateY(75px);
+        transform: translateY(0px);
     }
     100%{
         opacity: 1;
@@ -35,7 +42,7 @@ div #start{
 @-webkit-keyframes fadeInTop{
     0%{
         opacity: 0;
-        -webkit-transform: translateY(-75px);
+        -webkit-transform: translateY(0px);
     }
     100%{
         opacity: 1;
@@ -46,7 +53,7 @@ div #start{
 @-moz-keyframes fadeInTop{
     0%{
         opacity: 0;
-        -moz-transform: translateY(-75px);
+        -moz-transform: translateY(0px);
     }
     100%{
         opacity: 1;
@@ -57,7 +64,7 @@ div #start{
 @-o-keyframes fadeInTop{
     0%{
         opacity: 0;
-        -o-transform: translateY(-75px);
+        -o-transform: translateY(0px);
     }
     100%{
         opacity: 1;
@@ -159,11 +166,18 @@ h1{
   
   .sidenav .closebtn {
     position: absolute;
-    top: 0;
-    right: 25px;
+    top: 0px;
+    left: 0px;
     font-size: 36px;
-    margin-left: 50px;
-    margin-top: 100px;
+    margin-top: 60px;
+  }
+
+  .links{
+    margin-top: 20%;
+  }
+
+  #t{
+    margin-top: 40%;
   }
   
   #main {
